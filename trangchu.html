@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="./grid.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="grid"></div>
+    <template id="card-template">
+      <div class="card">
+        <div class="header">
+          <img
+            class="header-img skeleton"
+            src="https://source.unsplash.com/100x100/?nature"
+          />
+          <div class="title" data-title>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+          </div>
+        </div>
+        <div data-body>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text"></div>
+        </div>
+      </div>
+    </template>
+    <header class="grid header">
+      <!-- <div class="grid wide"> -->
+      <div class="row">
+        <div class="col l-0 m-2 c-1">
+          <label for="nav-mobile-input" id="main-box" class="nav-mobile-btn">
+            <i class="nav-mobile-btn-icon fa fa-list"></i>
+          </label>
+          <input
+            type="checkbox"
+            name="nav-mobile-input"
+            id="nav-mobile-input"
+          />
+          <label for="nav-mobile-input" class="nav-overlay"></label>
+          <div id="menu" class="sidemenu">
+            <a href="" class="sidemenu-link">Trang Chủ</a>
+            <a href="" class="sidemenu-link">Đăng Ký - Đăng Nhập</a>
+            <a href="" class="sidemenu-link">Sản Phẩm</a>
+            <a href="" class="sidemenu-link">Giới Thiệu</a>
+            <a href="" class="sidemenu-link">Liên Hệ</a>
+            <label for="nav-mobile-input">
+              <a class="sidemenu-link closebtn">&times;</a>
+            </label>
+          </div>
+        </div>
+        <div class="logo-container col l-4 m-8 c-9">
+          <a class="logo-name">VietTravel</a>
+        </div>
+        <div class="col l-8 m-0 c-0">
+          <ul class="row nav-container">
+            <li class="nav-item col l-2-4">
+              <a class="nav-item-link" href="./trangchu.html">Trang Chủ</a>
+            </li>
+            <li class="nav-item col l-2-4">
+              <a class="nav-item-link" href="">Đ.Ký-Đ.Nhập</a>
+            </li>
+            <li class="nav-item col l-2-4">
+              <a class="nav-item-link" href="">Sản Phẩm</a>
+            </li>
+            <li class="nav-item col l-2-4">
+              <a class="nav-item-link" href="">Giới Thiệu</a>
+            </li>
+            <li class="nav-item col l-2-4">
+              <a class="nav-item-link" href="">Liên Hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- </div> -->
+    </header>
+    <main class="grid wide">
+      <div class="row index-slider">
+        <div class="col l-12 m-12 c-12">
+          <div class="img-slider-container">
+            <div class="slider">
+              <div class="slide active">
+                <img src="./1.jpg" alt="" />
+                <div class="info">
+                  <h1>Heading 1</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur deserunt, ex unde eum est nemo obcaecati quos
+                    veniam laboriosam incidunt?
+                  </p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="./2.jpg" alt="" />
+                <div class="info">
+                  <h1>Heading 2</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur deserunt, ex unde eum est nemo obcaecati quos
+                    veniam laboriosam incidunt?
+                  </p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="./3.jpg" alt="" />
+                <div class="info">
+                  <h1>Heading 3</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur deserunt, ex unde eum est nemo obcaecati quos
+                    veniam laboriosam incidunt?
+                  </p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="./4.jpg" alt="" />
+                <div class="info">
+                  <h1>Heading 4</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur deserunt, ex unde eum est nemo obcaecati quos
+                    veniam laboriosam incidunt?
+                  </p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="./5.jpg" alt="" />
+                <div class="info">
+                  <h1>Heading 5</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur deserunt, ex unde eum est nemo obcaecati quos
+                    veniam laboriosam incidunt?
+                  </p>
+                </div>
+              </div>
+              <div class="navigation">
+                <i class="fas fa-chevron-left prev-btn"></i>
+                <i class="fas fa-chevron-right next-btn"></i>
+              </div>
+              <div class="navigation-visibility">
+                <div class="slide-icon active"></div>
+                <div class="slide-icon"></div>
+                <div class="slide-icon"></div>
+                <div class="slide-icon"></div>
+                <div class="slide-icon"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row index-introduction">
+        <div class="row index-introduction-heading">
+          <h1 class="col l-12 m-12 c-12">Tại Sao Nên Chọn VietTravel</h1>
+        </div>
+        <div class="row index-introduction-feature-container">
+          <div class="col l-4 m-4 c-4 index-introduction-feature">
+            <div>
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <p class="description">
+              <span>VietTravel luôn đảm bảo</span> một sự an toàn cho du khách
+              để giữ cho trải nghiệm dịch vụ của khách hàng luôn ở mức toàn vẹn
+              nhất.
+            </p>
+          </div>
+          <div class="col l-4 m-4 c-4 index-introduction-feature">
+            <div>
+              <i class="fab fa-pagelines"></i>
+            </div>
+            <p class="description">
+              <span>Với ưu tiên hàng đầu</span> là sự hài lòng của khách hàng,
+              VietTravel cung cấp những tiện nghi nhanh chóng và dễ dàng để
+              khách hàng vui chơi mà không lo nghĩ.
+            </p>
+          </div>
+          <div class="col l-4 m-4 c-4 index-introduction-feature">
+            <div><i class="fas fa-coins"></i></div>
+            <p class="description">
+              <span>Đảm bảo trải nghiệm</span> người dùng với chi phí tiết kiệm
+              nhất luôn là phương châm của Vietravel. Mỗi gói dịch vụ ở
+              VietTravel luôn gọn nhẹ vừa với túi tiền nhưng vẫn đặc sắc và đa
+              dạng.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row index-main">
+        <div class="col l-8 c-12 m-8 index-main-latest">
+          <h1>Tin Xem Nhiều</h1>
+          <div class="tabsUI">
+            <div>
+              <!-- Tab items -->
+              <div class="tabs">
+                <div class="tab-item active">Sự Kiện</div>
+                <div class="tab-item">Tour Du Lịch Mới Nhất</div>
+                <div class="tab-item">Thế Giới</div>
+                <div class="tab-item">Việt Nam</div>
+                <div class="line"></div>
+              </div>
+
+              <!-- Tab content -->
+              <div class="tab-content">
+                <div class="tab-pane active">
+                  <div class="row">
+                    <div class="col l-6 m-6 c-6">
+                      <img src="./new1.jpg" alt="new-img" class="tab-img" />
+                    </div>
+                    <div class="col l-6 m-6 c-6">
+                      <h2>
+                        Vietravel tham gia cùng UBND TP.HCM, Sở Du lịch TP.HCM
+                        xúc tiến phát triển du lịch 8 tỉnh tây bắc mở rộng
+                      </h2>
+                      <p>
+                        Hưởng ứng Nghị quyết số 128 ban hành ngày 11/10/2021 của
+                        Thủ tướng Chính phủ hướng dẫn tạm thời “Thích ứng an
+                        toàn, linh hoạt, kiểm soát hiệu quả dịch Covid -19”,
+                        chuyển từ mục tiêu Zero Covid sang sống chung với Covid
+                        và thực hiện nhiệm vụ kép vừa chống dịch vừa hồi phục
+                        kinh tế, Ngành Du lịch TP.HCM nói chung, Công ty Du lịch
+                        ...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane">
+                  <div class="row">
+                    <div class="col l-6 m-6 c-6">
+                      <img src="./new2.jpg" alt="new-img" class="tab-img" />
+                    </div>
+                    <div class="col l-6 m-6 c-6">
+                      <h2>
+                        Săn bình minh cực đẹp ở Tây Ninh với hành trình xanh an
+                        toàn
+                      </h2>
+                      <p>
+                        Chỉ cách TP. HCM chưa đến 100 km, Tây Ninh là một điểm
+                        tham quan, vui chơi xả stress cực phù hợp vào những dịp
+                        nghỉ ngơi ngắn ngày. Vùng đất Thánh yên bình giữa khung
+                        cảnh hữu tình, non hòa trong mây là một trong những điểm
+                        du lịch rất được ưa chuộng với các tín đồ du lịch hay
+                        nhiếp ảnh.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane">
+                  <div class="row">
+                    <div class="col l-6 m-6 c-6">
+                      <img src="./new3.jpg" alt="new-img" class="tab-img" />
+                    </div>
+                    <div class="col l-6 m-6 c-6">
+                      <h2>Lợi ích từ việc đầu tư định cư tại nước ngoài</h2>
+                      <p>
+                        Hiện nay, rất nhiều doanh nhân hay người Việt Nam có
+                        điều kiện đã tìm kiếm cơ hội đầu tư tại nước ngoài, và
+                        hướng đến việc trở thành công dân toàn cầu. Hình thức
+                        này không chỉ đem lại nguồn lợi nhuận hấp dẫn, bền vững
+                        cho gia đình mà còn vì tương lai của con trẻ. Họ mong
+                        muốn con cái được đào tạo và phát triển toàn diện tại
+                        nhữn ...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane">
+                  <div class="row">
+                    <div class="col l-6 m-6 c-6">
+                      <img src="./new4.jpg" alt="new-img" class="tab-img" />
+                    </div>
+                    <div class="col l-6 m-6 c-6">
+                      <h2>6 bãi biển đẹp nhất Phú Quốc</h2>
+                      <p>
+                        Phú Quốc sở hữu những đường bờ biển dài bất tận, có thể
+                        kể đến bãi Sao, bãi Dài, đồng thời vẫn còn rất nhiều bãi
+                        biển hoang sơ khác đẹp tựa thiên đường mang đến cảm giác
+                        yên bình, dễ chịu. Phú Quốc thực sự là điểm đến để gia
+                        đình bạn tận hưởng một kỳ nghỉ hè thật thú vị.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col l-4 c-0 m-4">
+          <h1>Đánh Giá</h1>
+          <div class="index-main-feedback-container">
+            <div class="index-main-feedback row">
+              <div class="col l-3 m-3 c-3 index-main-feedback-img-container">
+                <img src="./huy2.jpg" alt="" />
+              </div>
+              <div class="col l-9 m-9 c-9">
+                <h2>Huy Trần</h2>
+                <p>Gói dịch vụ rất tiết kiệm, dẫn đoàn nhiệt tình, vui vẻ.</p>
+              </div>
+            </div>
+            <div class="index-main-feedback row">
+              <div class="col l-3 m-3 c-3 index-main-feedback-img-container">
+                <img src="./huy1.jpg" alt="" />
+              </div>
+              <div class="col l-9 m-9 c-9">
+                <h2>Trần Huy</h2>
+                <p>Lừa đảo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="grid footer">
+      <!-- <div class="grid wide"> -->
+      <div class="row">
+        <div class="col l-12 m-0 c-0">
+          <ul class="footer-line-content">
+            <li class="footer-line-content-item">
+              <i class="fas fa-pen-nib"></i>Viết Bài Và Nhuận Bút
+            </li>
+            <li class="footer-line-content-item">
+              <i class="fas fa-id-card"></i>Thông Tin & Liên Hệ
+            </li>
+            <li class="footer-line-content-item">
+              <i class="fas fa-hand-holding-usd"></i>Báo Giá Quảng Cáo
+            </li>
+            <li class="footer-line-content-item">
+              <i class="fas fa-sitemap"></i>SiteMap
+            </li>
+            <li class="footer-line-content-item disabled">
+              <i class="fas fa-info-circle"></i>Đường dây nóng: (024) 730 77 333
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-last-content">
+        <div class="col l-12 m-12 c-12 footer-last-content-item">
+          © 2021 Bản Quyền Thuộc Về VietTravel
+        </div>
+      </div>
+      <!-- </div> -->
+      <div class="modal-container">
+        <div class="modal">
+          <h1>Thông Báo</h1>
+          <p>Hiện Chưa Có Thông Tin Cho Mục Này</p>
+          <button>Ok</button>
+        </div>
+      </div>
+      <div class="modal-overlay"></div>
+    </footer>
+  </body>
+  <script src="./app.js"></script>
+</html>
